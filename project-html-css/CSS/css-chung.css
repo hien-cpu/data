@@ -1,0 +1,285 @@
+:root {
+    --mau-chinh: rgb(46,46,46);
+    --br-hover:#fff;
+    --cl-hover: rgb(0, 0, 0);
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+body, header ul{
+    margin: 0px;
+    padding: 0px;
+}
+span {
+    font-weight: bold;
+}
+.cl-fl {
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    margin:0px;
+    font-size: 20px;
+    color: rgb(190, 62, 62);
+    text-transform: uppercase;
+}
+.thanh-ngan-cach{
+    height: 2px;
+    width: 100%;
+    background-color: rgb(190, 62, 62);
+    margin-bottom: 20px;
+}
+
+/* ============ Header =================*/
+header {
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+/* === head ==== */
+header .head {
+    width: 100%;
+    height: 150px;
+    background: url(../image/img-ban-header.png) no-repeat;
+    background-size: 100% 150px;
+    background-position: top right;
+    position: absolute;
+    top: 0px;
+}
+
+#logo {
+    height: 100%;
+    width: 200px;
+    box-sizing: border-box;
+    padding:5px 20px;
+    position: absolute;
+    left: 0px;
+}
+#logo img {
+    height: 100%;
+}
+
+header .head .doan-tex {
+    height: 100%;
+    width: 400px;
+    padding-left: 50px;
+    position: absolute;
+    left: 200px;
+}
+
+header .head .doan-tex  h2 {
+    font-size: 35px;
+    margin:20px 0px 0px;
+    color: rgb(190, 62, 62);
+}
+
+header .head .icon {
+    height: 20px;
+    position: relative;
+    bottom: -4px;
+}
+
+/* === head-link ==== */
+header .head-link {
+    width: 100vw;
+    height: 50px;
+    background-color: var(--mau-chinh);
+    position: absolute;
+    top: 150px;
+}
+
+header .head-link .menu {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+}
+header .head-link li {
+    float: left;
+    list-style-type: none;
+}
+header .head-link a {
+    line-height: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px 20px;
+    display: block;
+}
+header .head-link a:hover{
+    color: var(--cl-hover);
+    background-color:var(--br-hover) ;
+    text-decoration: underline;
+}
+
+header .head-link .from-search {
+    height: 30px;
+    width: 225px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    top :10px;
+    right: 50px;
+} 
+header .from-search input {
+    height: 100%;
+    width: 80%;
+    border-radius: 15px;
+    border: 0px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+}
+header .from-search input:focus {
+    outline: 0;
+}
+
+header .from-search .icon-search {
+    font-size: 18px;
+    background-color: #fff;
+    border: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 6px;
+    right: 15px;
+}
+header .from-search .icon-search:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* =========== sidebar ===============*/
+.sidebar {
+    width: calc( 100% - 980px);
+    margin-left: 20px;
+    height: 100%;
+    float: left;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.sidebar-main {
+    margin-top: -9px;
+}
+.sidebar-pages {
+    margin-top: -2px;
+}
+
+.item-sidebar {
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.item-sidebar .heading {
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+    background-color: rgb(190, 62, 62);
+    color: #fff;
+    padding: 4px 0px;
+    text-align: center;
+
+}
+.item-sidebar .menu {
+    padding:0px 10px 0px 20px;
+}
+
+.item-sidebar .menu  a {
+    text-align: justify;
+    color: #000;
+    margin-bottom: 10px;
+    display: block;
+}
+.item-sidebar .menu  a:hover {
+    text-decoration: underline;
+    font-weight: 200;
+}
+.item-sidebar img {
+    margin-top: 10px;
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========== Footer =================*/
+
+/* ==== top-Footer ======*/
+footer .top-footer {
+    height: 250px;
+    width: 100%;
+    background-color: var(--mau-chinh);
+    box-sizing: border-box;
+    position: relative;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.top-footer h2 {
+    margin: 20px 0px;
+    color: #fff;
+}
+
+.top-footer .item {
+    height: 100%;
+    width: calc(100% / 3);
+    float: left;
+}
+
+.top-footer .thong-tin p {
+    margin-bottom: 16px;
+    margin-top: 0px;
+    color: #fff;
+}
+.top-footer .thong-tin i {
+    height: 16px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.top-footer .lien-ket-nhanh .menu{
+    padding:0px 16px;
+    color: #fff;
+    margin-top: -8px;
+}
+.lien-ket-nhanh .menu a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 0px;
+}
+.lien-ket-nhanh .menu a:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+.top-footer .ket-noi {
+    padding-left: 47px;
+    box-sizing:border-box;
+}
+.top-footer .ket-noi .icon-footer {
+    text-align: center;
+    margin-top: 14px;
+}
+.top-footer .icon-footer a {
+    text-decoration: none;
+}
+.top-footer .icon-footer .icons {
+    height: 30px;
+    margin: 0px 5px;
+}
+
+/* ==== button-Footer ======*/
+footer .button-footer {
+    height: 30px;
+    width: 100%;
+    background-color: #585555;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+}

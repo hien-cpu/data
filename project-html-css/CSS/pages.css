@@ -1,0 +1,138 @@
+:root {
+    --mau-chinh: rgb(46,46,46);
+}
+
+/* =========== Container ============ */
+.container {
+    height: 635px;
+    width: 100%;
+    margin-top: 202px;
+    padding-top: 50px;
+}
+
+.co-vat-tu-xung {
+    height: 1025px;
+}
+/* ===== item-left ===== */
+.container .item-left {
+    width: 960px;
+    height: 100%;
+    padding-left: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.container .item-left .row {
+    width: 100%;
+    height: 175px;
+    box-shadow: 0px 0px 15px #ccc;
+    background-color:var(--mau-chinh);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.container .item-left .row:hover {
+    transform: scale(1.01);
+    transition: all ease-in-out 0.3s;
+}
+
+.container .item-left .image {
+    width: 221px;
+    height: 100%;
+    border-right:1px solid #ccc;
+    padding: 20px;
+    position: absolute;
+    left: 0px;
+    box-sizing: border-box;
+}
+.container .image img {
+    max-width: 100%;
+    min-height: 130px;
+    max-height: 144px;
+    margin: 0 auto;
+    display: block;
+}
+.container .item-left .noi-dung-mo-ta {
+    width: calc(100% - 221px);
+    height: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0px;
+    color: #fff;
+    text-align: justify;
+}
+.container .noi-dung-mo-ta .heading {
+    font-size: 18px;
+    margin:12px 0px;
+}
+
+/* === đấu giá ==== */
+.container-dau-gia {
+    width: 100%;
+    height: 590px;
+    margin-top: 202px;
+    padding: 0px 0px 20px 0px;
+    box-sizing: border-box;
+}
+.countdown {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(15deg, #000, rgba(124, 96, 96, 0.3), #000 ), url("../image/Banner.png");
+    background-size: 100% ;
+    box-sizing: border-box;
+    padding-top: 150px;
+}
+.countdown .box {
+    height: 230px;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(228, 226, 226);
+    background-color: rgb(0, 0, 0,0.7);
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgb(190, 190, 190);
+    border-radius: 15px;
+}
+.box .haeding {
+    color: #fff;
+    font-size: 30px;
+    margin: 20px 0px 40px -15px;
+}
+.item-box {
+    width: 100px;
+    height: 80px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0px 30px;
+    box-sizing: border-box;
+}
+
+/* =========== CSS các bài viết trong trang Kiến thức cổ vật ============ */
+.phan-biet-do-gom {
+    height: 1000px;
+}
+.suu-tam-do-go {
+    height: 1020px;
+}
+.cac-bao-quan-go {
+    height: 1040px;
+}
+
+.item-kien-thuc-do-co p {
+    text-align: justify;
+    display: block;
+}
+.item-kien-thuc-do-co img{
+    display: block;
+    margin: 0 auto;
+    max-height: 300px;
+}
+.item-kien-thuc-do-co li {
+    margin-bottom: 8px;
+    text-align: justify;
+}

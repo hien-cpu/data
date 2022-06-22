@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="./CSS/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./CSS/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="./CSS/css-chung.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <script src="./js/js-chung.js"></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div id="logo">
+                <img src="./image/logo.png" alt="logo">
+            </div>
+            <div class ="doan-tex">
+                <h2>ĐỒ CỔ VĂN HIỀN</h2> <br>
+                <img class="icon" src="./image/icons/phone-call.png" alt=""> <span> Điện Thoại </span>  : 0243 204 2022 <br>
+                <img class="icon" src="./image/icons/mail.png" alt=""> <span>Email</span>  : doco@gmmail.com
+            </div>
+        </div>
+
+        <div class="head-link">
+            <ul class="menu">
+                <li>
+                    <a href="./index.html">
+                        <i class="ti-home"></i>
+                        Trang Chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="./Pages/Kien-thuc-co-vat.html">
+                        Kiến Thức Cổ Vật
+                    </a>
+                </li>
+                <li>
+                    <a href="./Pages/Co-vat-tu-xung.html">
+                        Cổ Vật Tứ Xung
+                    </a>
+                </li>
+                <li>
+                    <a href="./Pages/dau-gia.html">
+                        Đấu Giá
+                    </a>
+                </li>
+            </ul>
+
+            <div class="from-search">
+                <input id="dcm_search" type="text" placeholder="Search... !" onkeyup="searchfunc()">
+                <button class="icon-search" onclick="thongBaoTK ()">
+                    <i class="ti-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="main">
+        <div class="banner">
+        </div>
+
+        <div class="container">
+            <div class="item-left">
+                <h2>SẢN PHẨM</h2>
+
+                <div class="thanh-ngan-cach"></div>
+
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="column">
+                        <a href="./Product/vong-co.html">
+                            <img src="./image/Products/mon-qua-tu-tay-tang.jpg">
+                            <div class="mo-ta">
+                                <h3 class="heading">Vòng cổ ngọc bích - Tây Tạng</h3>
+                                Sau chuyến đi dài ngày đến Tây Tạng, được am hiểu nhiều điều nơi này. Chúng tôi đã thỉnh những vật ...
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="column" style="margin: 0px 20px;">
+                        <a href="./Product/dong-ho-deo.html">
+                            <img src="./image/Products/Đong-Ho.jpg">
+                            <div class="mo-ta">
+                                <h3 class="heading">Đồng hồ FNGEEN P1010</h3>
+                                Với sản phẩm đồng hồ nam thời trang FNGEEN nam tính, các chàng trai hoàn toàn có thể hô biến nó thành món...
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="column">
+                        <a href="./Product/dong-ho-de-ban.html">
+                            <img src="./image/Products/DONG-HO-DE-BAN-OMEGA-4.jpg">
+                            <div class="mo-ta">
+                                <h3 class="heading">Đồng hồ để bàn Omega 1882</h3>
+                                Để sở hữu một chiếc đồng hồ cổ của nhãn hiệu OMEGA không phải là một điều dễ dàng...
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cl-fl"></div>
+                </div>
+
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="column">
+                        <a href="./Product/dong-ho-pha-le.html">
+                            <img src="./image/Products/dong-ho-omega-1.jpg">
+                            <div class="mo-ta">
+                                <h3 class="heading">Đồng hồ pha lê cổ Omega 1882</h3>
+                                Omega rất chú trọng đến vẻ ngoài, thiết kế và mẫu mã của đồng hồ. Vì vậy, qua thời gian...
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="column" style="margin: 0px 20px;">
+                        <a href="./Product/am-dong.html">
+                            <img src="./image/Products/am-dong-xanh-co.jpg">
+                            <div class="mo-ta">
+                                <h3 class="heading">Ấm đồng xanh thời nhà Thanh</h3>
+                                Chiếc ấm đồng xanh thời nhà Thanh sẽ được đấu giá tại Đồ Cổ Tứ Xung...
+                            </div>
+                        </a>
+                    </div>
+                    <div class="cl-fl"></div>
+                </div>
+            </div>
+
+            <div class="sidebar sidebar-main">
+                <div class="item-sidebar">
+                    <h3 class="heading">BÀI VIẾT MỚI</h3>
+                    <ul class="menu">
+                        <li>
+                            <a href="./Pages/phan-biet-do-gom.html">
+                                Phân biệt đồ gốm sứ thật và giả
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./Pages/suu-tam-do-go.html">
+                                Sưu tầm đồ gỗ cổ đồ gỗ xưa cần lưu ý những gì
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="./Pages/cac-bao-quan-go.html">
+                                Cách bảo quản đồ gỗ cổ và đồ gỗ khảm ốc xà cừ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="item-sidebar">
+                    <h3 class="heading">Sản Phẩm Mới</h3>
+                    <ul class="menu">
+                        <li>
+                            <a href="./Product/vong-co.html">
+                                Món quà từ Tây Tạng – Vòng cổ ngọc bích phong cách retro
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./Product/dong-ho-deo.html">
+                                Đồng hồ thời trang nam FNGEEN P1010
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="./Product/am-dong.html">
+                                Ấm đồng xanh thời nhà Thanh
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="item-sidebar">
+                    <h3 class="heading">Đấu Giá Đồ Cổ Tứ Xung</h3>
+                    <ul class="menu">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/daugiadocotuxung/?__xts__[0]=68.ARAX6LBKPkTNuUggX5wm-qvFW0pv1R2E9UMAdUZ_WkBzatW3lXzHLA2v_3Lab-fRHA8rRnt3ZaxIjqg2svNjNqYaiT7F1M90bya46B3T0QpMmENKwA5rKn6m7IZHx4Czxuk-x_4QnN8HbnbqfUDKbyQVwtlk_Pl90i6z8X_IEXn-C94Em1lOEE8p-ag071sinfJ7tQSvGtXXC3nBn_0gJ1-LFDx8p8fvnqI">
+                                Truy cập linh để tham gia group 
+                                <br>
+                                (fb.com/daugiadocotuxung)
+                                <br>
+                                <img src="./image/Products/-fbdau-gia-do-co.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cl-fl"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="top-footer">
+            <div class="item thong-tin">
+                <h2>ĐỒ CỔ VĂN HIỀN</h2>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Địa Chỉ </span>
+                    : 51 Tạ Quang Bửu, Hai Bà Trưng, HN <br>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Điện Thoại </span>
+                    : 032-6660-728<br>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Websits </span>
+                    : shopvanhien.site<br>
+                </p>
+            </div>
+
+            <div class="item lien-ket-nhanh">
+                <h2>Liên Kết Nhanh</h2>
+                <ul class="menu">
+                    <li>
+                        <a href="./main.html">
+                            Trang Chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Pages/Kien-thuc-co-vat.html">
+                            Kiến Thức Cổ Vật
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Pages/Co-vat-tu-xung.html">
+                            Cổ Vật Tứ Xung
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./Pages/dau-gia.html">
+                            Đấu Giá
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item ket-noi">
+                <h2>Kết Nối Với Chúng Tôi</h2>
+
+                <!-- plugin trang facebook -->
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0" nonce="tVdTZMZ6"></script>
+                <span style="vertical-align: bottom; width: 340px; height: 130px;">
+                    <iframe name="f3c5a4b51953ffc" width="340px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v13.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2b467c05350e3c%26domain%3D%26is_canvas%3Dfalse%26origin%3Dfile%253A%252F%252F%252Ff3fd6a2e970b9bc%26relation%3Dparent.parent&amp;container_width=341&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FPagethiweb%2F%3Fref%3Dpages_you_manage&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=&amp;width=" style="border: none;visibility: visible; width:340px; height: 130px;" class="">
+                    </iframe>
+                </span>
+                
+                <div class="icon-footer">
+                    <a target="_blank" href="https://www.facebook.com/Pagethiweb/?ref=pages_you_manage">
+                        <img class="icons" src="./image/icons/facebook.png"> 
+                    </a>
+
+                    <a target="_blank" href="https://www.instagram.com/explore/locations/439962149400974/o-co/"> 
+                        <img class="icons" src="./image/icons/instagram.png"> 
+                    </a>
+
+                    <a target="_blank" href="https://www.tiktok.com/@9999quanghd9999"> 
+                        <img class="icons" src="./image/icons/tik-tok.png"> 
+                    </a>
+
+                    <a target="_blank" href="https://www.youtube.com/channel/UCERGRGegviN2Nh8rG9Bl_yA"> 
+                        <img class="icons" src="./image/icons/youtube.png"> 
+                    </a>
+
+                    <a target="_blank" href=""> 
+                        <img class="icons" src="./image/icons/twitter.png"> 
+                    </a>
+                </div>
+            </div>
+            <div class="cl-fl"></div>
+        </div>
+
+        <div class="button-footer">
+            &copy; 20022 Đồ Cổ Văn Hiền
+        </div>
+    </footer>
+</body>
+</html>
